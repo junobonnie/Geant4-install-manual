@@ -42,5 +42,63 @@ $ cargo install viu
  # viu : cli 이미지 뷰어
   # cli : Command-Line Interface, MS-DOS 시절을 생각하라
 
+$ echo 'PATH=$HOME/.cargo/bin:$PATH' >> ~/.bashrc
+ # echo 'PATH=$HOME/.cargo/bin:$PATH' : 'PATH=$HOME/.cargo/bin:$PATH' 를 출력해라
+  # PATH : 명령어가 들어있는 경로를 지정하는 환경변수
+  # HOME : linux 사용자의 홈 경로 환경변수
+ # >> ~/.bashrc : ~/.bashrc 파일 밑부분에 출력해라
+  # ~/ : linux 사용자의 홈 경로
+  # .bashrc : bash shell(linux terminal)이 시작할 때마다 실행되는 스크립트를 적는 파일
+    (windows 시작 프로그램 폴더를 생각하면 쉽다.)
+    
+번외. gedit 설정하기
+- gedit 실행 >> 편집 >> 기본설정 >> 원하는 설정 선택
+ # 추천 설정 : [보기] 줄 번호 표시, 현재줄 강조, 일치하는 괄호 강조,
+              [편집기] 자동 들여쓰기, 자동 저장,
+              [글꼴 및 색] 원하는 테마 선택
+- gedit 실행 >> 보기 >> 강조모드 >> 원하는 언어 선택
+
+번외. 명령어 자동완성
+- 다음 문장을 ~/.bashrc 파일 맨 밑에 추가
+# ------------------------------- #
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+# ------------------------------- #
+
+3. wsl에서 gui 한글 입력 설정하기
+$ sudo apt install fonts-nanum fonts-nanum-coding fonts-nanum-extra
+ # 한글 폰트(나눔체) 설치
+ 
+$ sudo apt install uim uim-byeoru
+ # uim이라는 입력기 설치
+ # byeoru라는 입력 방식 설치
+ 
+$ source ~/.bashrc
+$ uim-pref-gtk
+- [Global setting] >> default input method를 Byeoru로 선택
+- [Byeoru key bindings 1] >> 한영키([on], [off])와 한자키([chinese characters]) 설정
+
+4.사용할 Python 라이브러리 설치
+$ sudo pip3 install pip --upgrade
+ # pip 버전 업그레이드
+ 
+$ pip3 install matplotlib numpy scipy pandas colorama pillow
+ # matplotlib : python에서 그래프를 그릴 때 쓰는 라이브러리, 매우 강력하다
+ # numpy : 행렬 관련 계산 라이브러리
+ # scipy : 과학용 계산 라이브러리
+ # pandas : 데이터 프레임 라이브러리
+ # colorama : 터미널 창 글자색 관리 라이브러리
+ # pillow : 이미지 처리 라이브러리
+ 
+5. windows에서 wsl 바로가기 만들기
+- 파일 탐색기에 \\wsl$ 입력
+- 바로가기 만들기
+
+6. wsl에서 windows 바로가기 만들기
+$ ln -s /mnt/c/User/{user name}/desktop .
+ # {user name}엔 본인 컴퓨터의 사용자 명을 넣어야 한다
+ 
+7. Xming 설치
+
 
 

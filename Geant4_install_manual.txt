@@ -17,7 +17,7 @@ $ sudo apt update
 $ sudo apt upgrade
  # 패키지 업데이트
  
-$ sudo apt install gedit neofetch htop tree git wget python3 python3-pip gfortran gnuplot nautilus eog gimp zip cargo okular firefox dialog
+$ sudo apt install gedit neofetch htop tree git wget python3 python3-pip gfortran gnuplot nautilus eog gimp zip cargo okular firefox dialog spyder
  # gedit : gui 텍스트 에디터
  # neofetch : 컴퓨터와 os의 사양 및 정보를 알려주는 프로그램
  # htop : 더 나은 작업관리자
@@ -37,6 +37,7 @@ $ sudo apt install gedit neofetch htop tree git wget python3 python3-pip gfortra
  # okular : pdf 등 문서 뷰어
  # firefox : 파이어폭스 웹 브라우저
  # dialog : 터미널 상에서 gui를 만들어주는 라이브러리
+ # spyder : 아주 멋진 python IDE
  
 $ cargo install viu
  # viu : cli 이미지 뷰어
@@ -99,6 +100,17 @@ $ ln -s /mnt/c/User/{user name}/desktop .
  # {user name}엔 본인 컴퓨터의 사용자 명을 넣어야 한다
  
 7. Xming 설치
-
-
-
+ # Xming이란? : linux gui 프로그램 실행을 위해 사용되는 네트워크 기반의 gui 디스플레이 서버 프로그램
+ 
+- windows에 Xming 프로그램 다운로드, http://www.straightrunning.com/XmingNotes/
+- 설치 완료 후 Xming을 눌러 실행
+$ echo "export DISPLAY=localhost:0" >> ~/.bashrc
+ # export DISPLAY=localhost:0 : DISPLAY 라느 환경변수를 localhost:0 이라고 선언
+ 
+$ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+ # -y : yes를 선택하는 옵션, && : 명령어를 연달아 실행하게 해줌
+ # apt autoremove : 패키지 업데이트로 쓸모 없어진 기존 패키지를 자동 삭제
+ 
+$ sudo apt install -y build-essential cmake libexpat1-dev qt5-default libxmu-dev
+ # [win버튼 + R] >> shell:startup 입력을 통해서 나온 시작 프로그램 폴더에
+   Xming 실행 프로그램을 넣으면 컴퓨터가 시작할 때마다 자동적으로 Xming이 켜지게 할 수 있다

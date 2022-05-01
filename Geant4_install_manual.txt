@@ -238,8 +238,8 @@ $ ./testOut setup.file 1000
 $ cd ~/
 $ git clone https://github.com/junobonnie/shellplot
 $ cd ~/geant4_works
-git clone https://github.com/junobonnie/Geant4-Auto-Run
-git clone https://github.com/evandde/example_advpg
+$ git clone https://github.com/junobonnie/Geant4-Auto-Run
+$ git clone https://github.com/evandde/example_advpg
 
 16. 예제 템플릿 코드 다운로드
 $ mkdir -p ~/geant4_works/template

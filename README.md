@@ -138,6 +138,7 @@
 ```
 ***
 ## ​8. CLHEP 설치 
+```shell
  ​ # CLHEP란? : Class Library for High Energy Physics, 일반 수치 프로그래밍, 벡터 산술,  
  ​   기하학, 의사난수 생성 및 선형 대수학을 제공하는 C++ 라이브러리 
  ​    
@@ -166,8 +167,10 @@
  ​ # make : 소스코드를 컴파일해라, -j n : 컴파일 시 n개의 코어를 사용해라 
  ​ # `grep -c processor /proc/cpuinfo` : 컴퓨터의 코어 수 반환 
  ​ #  make install : 소스코드를 빌드해라 
- ​  
+```
+***
 ## ​9. Geant4 data file 설치 
+```shell
  ​$ sudo mkdir -p /opt/geant4/geant4data 
  ​$ cd /opt/geant4/geant4data 
  ​$ sudo wget https://geant4-data.web.cern.ch/datasets/G4NDL.4.6.tar.gz 
@@ -186,8 +189,10 @@
  ​  
  ​$ sudo rm -rf *.gz 
  ​ # rm -rf *.gz : 하위 경로내에서 이름이 .gz로 끝나는 파일을 모두 지워라 
- ​  
+```
+***
 ## ​10. Geant4 설치 
+```shell
  ​$ sudo mkdir -p /opt/geant4/10.7.p03 
  ​$ cd /opt/geant4/10.7.p03 
  ​$ sudo wget http://geant4-data.web.cern.ch/geant4-data/releases/geant4.10.07.p03.tar.gz 
@@ -206,8 +211,10 @@
  ​$ env | grep G4 
  ​ # env : 환경변수를 모두 출력하라 
  ​ # | grep G4 : 출력할 문장 중 G4를 포함한 문장만 출력 
- ​  
+```
+***
 ## ​11. Geant4 예제 실행해보기 
+```shell
  ​$ mkdir -p ~/geant4_works 
  ​$ cp -r /opt/geant4/10.7.p03/geant4.10.07.p03/examples/basic/B1 ~/geant4_works 
  ​$ cd ~/geant4_works/B1 
@@ -226,8 +233,10 @@
  ​  
  ​- No such file or directory 관련 에러 발생 시 
  ​$ sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5 
-  
+```
+***
 ## ​12. ROOT 설치 
+```shell
  ​ # ROOT란? : Geant4를 만든 CERN에서 개발한 데이터 분석 툴 
   
  ​$ sudo mkdir -p /opt/root/6.26.02 
@@ -239,8 +248,10 @@
  ​$ root 
  ​$ new TBrowser 
  ​$ .q 
-  
+```
+***
 ## ​13. CRY 설치 
+```shell
  ​ # CRY란? : Cosmic-Ray shower librarY, 우주 방사선 샤워의 분포에 맞춰 랜덤한 입자를 생성하는 라이브러리 
  ​  
  ​$ sudo -p mkdir /opt/cry/1.7 
@@ -249,28 +260,36 @@
  ​$ tar -zxvf cry_v1.7.tar.gz 
  ​$ cd cry_v1.7 
  ​$ make -j `grep -c processor /proc/cpuinfo`  
-  
+```
+***
 ## ​14. CRY 예제 실행해보기 
+```shell
  ​$ cd test 
  ​$ make all -j `grep -c processor /proc/cpuinfo` 
  ​$ ./testMain setup.file 1000 
  ​$ ./testOut setup.file 1000 
-  
+```
+***
 ## ​15. 미리 만들어 둔 Geant4 코드 및 유용한 코드 다운로드 
+```shell
  ​$ cd ~/ 
  ​$ git clone https://github.com/junobonnie/shellplot 
  ​$ cd ~/geant4_works 
  ​git clone https://github.com/junobonnie/Geant4-Auto-Run 
  ​git clone https://github.com/evandde/example_advpg 
-  
+```
+***
 ## ​16. 예제 템플릿 코드 다운로드 
+```shell
  ​$ mkdir -p ~/geant4_works/template 
  ​$ cd ~/geant4_works/template 
  ​$ git clone https://github.com/evandde/g4_minimal 
  ​$ wget https://github.com/evandde/g4_minimal/archive/refs/heads/examples.zip 
  ​$ unzip *.zip 
-  
+```
+***
 ## ​17. Geant4 관련 자료 다운로드 
+```shell
  ​$ mkdir -p ~/geant4_docs 
  ​$ cd ~/geant4_docs 
  ​$ wget https://www.cms-kr.org/pub/Main/InkyuPark/2009-NuclearSchool-Lecture1-ROOT.pdf 
@@ -278,14 +297,17 @@
  ​$ mkdir geant4_tutorial 
  ​$ cd geant4_tutorial  
  ​$ wget -m https://evandde.github.io/ 
-  
+```
+***
 ## ​18. 자기장 관련 코드 다운로드 
+```shell
  ​$ mkdir -p ~/geant4_works/field 
  ​$ cd ~/geant4_works/field 
  ​$ wget https://github.com/ejungwoo/opentutorials_Geant4/archive/refs/heads/field_and_uicmd.zip 
  ​$ unzip *.zip 
  ​$ wget https://indico.cern.ch/event/781244/contributions/3251909/attachments/1782359/2901794/MagneticField-v002.pdf 
-  
+```
+***
 ## ​19. 여러 라이브러리 다운로드 
 ```shell
  ​$ mkdir -p ~/another_packages 
@@ -298,7 +320,7 @@
 ```shell
  ​- windows에 설치하기 http://cosray.phys.uoa.gr/index.php/dyastima 
  ​- 메뉴얼 다운하기 http://cosray.phys.uoa.gr/apps/DYASTIMA/DYASTIMA_USER_MANUAL.pdf 
-```1
+```
 ***
 ## ​부록. 설치 구조 
 ```shell

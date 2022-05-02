@@ -56,10 +56,9 @@
  ​  # HOME : linux 사용자의 홈 경로 환경변수 
  ​ # >> ~/.bashrc : ~/.bashrc 파일 밑부분에 출력해라 
  ​  # ~/ : linux 사용자의 홈 경로 
- ​  # .bashrc : bash shell(linux terminal)이 시작할 때마다 실행되는 스크립트를 적는 파일 
- ​    (windows 시작 프로그램 폴더를 생각하면 쉽다.) 
+ ​  # .bashrc : bash shell(linux terminal)이 시작할 때마다 실행되는 스크립트를 적는 파일 (windows 시작 프로그램 폴더를 생각하면 쉽다.) 
 ```
-***    
+***
 ### ​번외. gedit 설정하기 
 ```shell
  ​- gedit 실행 >> 편집 >> 기본설정 >> 원하는 설정 선택 

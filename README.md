@@ -59,7 +59,7 @@
  ​  # .bashrc : bash shell(linux terminal)이 시작할 때마다 실행되는 스크립트를 적는 파일 
  ​    (windows 시작 프로그램 폴더를 생각하면 쉽다.) 
 ```
-*** ​     
+***    
 ### ​번외. gedit 설정하기 
 ```shell
  ​- gedit 실행 >> 편집 >> 기본설정 >> 원하는 설정 선택 

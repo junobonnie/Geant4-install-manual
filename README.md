@@ -135,7 +135,7 @@
 ## ​7. Xming 설치 
 
  ​ # Xming이란? : linux gui 프로그램 실행을 위해 사용되는 네트워크 기반의 gui 디스플레이 서버 프로그램 
- ​  
+   
  ​- windows에 Xming 프로그램 다운로드, http://www.straightrunning.com/XmingNotes/ 
  
  ​- 설치 완료 후 Xming을 눌러 실행 

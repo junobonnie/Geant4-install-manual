@@ -69,8 +69,8 @@
 ```
 ***
 ### ​번외. 명령어 자동완성 
-```shell
  ​- 다음 문장을 ~/.bashrc 파일 맨 밑에 추가 
+ ```shell
  ​# ------------------------------- # 
  ​bind 'set show-all-if-ambiguous on' 
  ​bind 'TAB:menu-complete' 
@@ -107,10 +107,10 @@
 ```
 ***
 ## ​5. windows에서 wsl 바로가기 만들기 
-```shell
+
  ​- 파일 탐색기에 \\wsl$ 입력 
  ​- 바로가기 만들기 
-```
+
 ***
 ## ​6. wsl에서 windows 바로가기 만들기 
 ```shell
@@ -119,11 +119,12 @@
 ```
 ***
 ## ​7. Xming 설치 
-```shell
+
  ​ # Xming이란? : linux gui 프로그램 실행을 위해 사용되는 네트워크 기반의 gui 디스플레이 서버 프로그램 
  ​  
  ​- windows에 Xming 프로그램 다운로드, http://www.straightrunning.com/XmingNotes/ 
  ​- 설치 완료 후 Xming을 눌러 실행 
+ ```shell
  ​$ echo "export DISPLAY=localhost:0" >> ~/.bashrc 
  ​ # export DISPLAY=localhost:0 : DISPLAY 라느 환경변수를 localhost:0 이라고 선언 
  ​  

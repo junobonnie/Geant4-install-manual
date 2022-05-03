@@ -1,20 +1,21 @@
 # Geant4-install-manual
 ***
 ## ​0. 표현 형식 설명 
-```shell
+
  ​(숫자). (제목) : 목차이다. 
  ​- (문장) : 해야하는 행동을 적어둔 문장이다. 
+ ```shell
  ​$ (문장) : 터미널에 입력해야 하는 코드를 적어둔 문장이다. 
  ​ # (문장) : 주석 및 설명문이다. 
 ```
 ***
 ## ​1. windows에 wsl 설치하기 
-```shell
+
  ​- '제어판 > 프로그램 > 프로그램 및 기능 - Windows 기능 켜기/끄기'를 선택 >> Linux용 Windows 하위 시스템의 체크박스를 활성화 >> 재부팅 
  ​- 마이크로소프트 앱스토어에서 wsl 설치 
  ​- wsl 실행 및 사용자 계정 설정 
  ​ # wsl 이란? : Windows Subsystem for Linux, windows에서 linux 커널과 프로그램이 돌아가게 해줌 
-```
+
 ***
 ## ​2. 유용한 linux 배포 패키지 설치 
 ```shell
@@ -60,13 +61,13 @@
 ```
 ***
 ### ​번외. gedit 설정하기 
-```shell
+
  ​- gedit 실행 >> 편집 >> 기본설정 >> 원하는 설정 선택 
  ​ # 추천 설정 : [보기] 줄 번호 표시, 현재줄 강조, 일치하는 괄호 강조, 
  ​              [편집기] 자동 들여쓰기, 자동 저장, 
  ​              [글꼴 및 색] 원하는 테마 선택 
  ​- gedit 실행 >> 보기 >> 강조모드 >> 원하는 언어 선택 
-```
+
 ***
 ### ​번외. 명령어 자동완성 
  ​- 다음 문장을 ~/.bashrc 파일 맨 밑에 추가 
@@ -88,9 +89,10 @@
  ​  
  ​$ source ~/.bashrc 
  ​$ uim-pref-gtk 
+ ```
  ​- [Global setting] >> default input method를 Byeoru로 선택 
  ​- [Byeoru key bindings 1] >> 한영키([on], [off])와 한자키([chinese characters]) 설정 
-```
+
 ***
 ## ​4.사용할 Python 라이브러리 설치 
 ```shell
@@ -133,15 +135,13 @@
  ​ # apt autoremove : 패키지 업데이트로 쓸모 없어진 기존 패키지를 자동 삭제 
  ​  
  ​$ sudo apt install -y build-essential cmake libexpat1-dev qt5-default libxmu-dev 
- ​ # [win버튼 + R] >> shell:startup 입력을 통해서 나온 시작 프로그램 폴더에 
- ​   Xming 실행 프로그램을 넣으면 컴퓨터가 시작할 때마다 자동적으로 Xming이 켜지게 할 수 있다 
+ ​ # [win버튼 + R] >> shell:startup 입력을 통해서 나온 시작 프로그램 폴더에 Xming 실행 프로그램을 넣으면 컴퓨터가 시작할 때마다 자동적으로 Xming이 켜지게 할 수 있다 
 ```
 ***
 ## ​8. CLHEP 설치 
-```shell
  ​ # CLHEP란? : Class Library for High Energy Physics, 일반 수치 프로그래밍, 벡터 산술,  
  ​   기하학, 의사난수 생성 및 선형 대수학을 제공하는 C++ 라이브러리 
- ​    
+```shell  
  ​$ sudo mkdir -p /opt/clhep 
  ​ # sudo : 관리자 권한으로 
  ​ # mkdir -p /opt/clhep : 폴더를 만들되 /opt/clhep 폴더가 없으면 /opt/clhep 폴더를 만들어라 
@@ -230,15 +230,16 @@
  ​  
  ​$ ./exampleB1 
  ​ # exampleB1 실행 파일을 실행하라, gui 환경에서 실햄됨 
- ​  
+```
  ​- No such file or directory 관련 에러 발생 시 
+```shell
  ​$ sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5 
 ```
 ***
 ## ​12. ROOT 설치 
-```shell
+
  ​ # ROOT란? : Geant4를 만든 CERN에서 개발한 데이터 분석 툴 
-  
+```shell 
  ​$ sudo mkdir -p /opt/root/6.26.02 
  ​$ cd /opt/root/6.26.02/ 
  ​$ wget https://root.cern/download/root_v6.26.02.Linux-ubuntu20-x86_64-gcc9.4.tar.gz 
@@ -251,9 +252,9 @@
 ```
 ***
 ## ​13. CRY 설치 
-```shell
+
  ​ # CRY란? : Cosmic-Ray shower librarY, 우주 방사선 샤워의 분포에 맞춰 랜덤한 입자를 생성하는 라이브러리 
- ​  
+```shell 
  ​$ sudo -p mkdir /opt/cry/1.7 
  ​$ cd /opt/cry/1.7 
  ​$ wget https://nuclear.llnl.gov/simulation/cry_v1.7.tar.gz 
@@ -317,10 +318,10 @@
 ```
 ***
 ## ​20. dyastima 설치 
-```shell
+
  ​- windows에 설치하기 http://cosray.phys.uoa.gr/index.php/dyastima 
  ​- 메뉴얼 다운하기 http://cosray.phys.uoa.gr/apps/DYASTIMA/DYASTIMA_USER_MANUAL.pdf 
-```
+
 ***
 ## ​부록. 설치 구조 
 ```shell

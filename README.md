@@ -5,6 +5,7 @@
  ​(숫자). (제목) : 목차이다. 
  
  ​- (문장) : 해야하는 행동을 적어둔 문장이다. 
+ 
  ```shell
  ​$ (문장) : 터미널에 입력해야 하는 코드를 적어둔 문장이다. 
  ​ # (문장) : 주석 및 설명문이다. 
@@ -13,8 +14,11 @@
 ## ​1. windows에 wsl 설치하기 
 
  ​- '제어판 > 프로그램 > 프로그램 및 기능 - Windows 기능 켜기/끄기'를 선택 >> Linux용 Windows 하위 시스템의 체크박스를 활성화 >> 재부팅 
+ 
  ​- 마이크로소프트 앱스토어에서 wsl 설치 
+ 
  ​- wsl 실행 및 사용자 계정 설정 
+ 
  ​ # wsl 이란? : Windows Subsystem for Linux, windows에서 linux 커널과 프로그램이 돌아가게 해줌 
 
 ***
@@ -64,13 +68,18 @@
 ### ​번외. gedit 설정하기 
 
  ​- gedit 실행 >> 편집 >> 기본설정 >> 원하는 설정 선택 
+ 
  ​ # 추천 설정 : [보기] 줄 번호 표시, 현재줄 강조, 일치하는 괄호 강조, 
+ 
  ​              [편집기] 자동 들여쓰기, 자동 저장, 
+ 
  ​              [글꼴 및 색] 원하는 테마 선택 
+ 
  ​- gedit 실행 >> 보기 >> 강조모드 >> 원하는 언어 선택 
 
 ***
 ### ​번외. 명령어 자동완성 
+
  ​- 다음 문장을 ~/.bashrc 파일 맨 밑에 추가 
  ```shell
  ​# ------------------------------- # 
@@ -92,6 +101,7 @@
  ​$ uim-pref-gtk 
  ```
  ​- [Global setting] >> default input method를 Byeoru로 선택 
+ 
  ​- [Byeoru key bindings 1] >> 한영키([on], [off])와 한자키([chinese characters]) 설정 
 
 ***
@@ -112,6 +122,7 @@
 ## ​5. windows에서 wsl 바로가기 만들기 
 
  ​- 파일 탐색기에 \\wsl$ 입력 
+ 
  ​- 바로가기 만들기 
 
 ***
@@ -126,10 +137,12 @@
  ​ # Xming이란? : linux gui 프로그램 실행을 위해 사용되는 네트워크 기반의 gui 디스플레이 서버 프로그램 
  ​  
  ​- windows에 Xming 프로그램 다운로드, http://www.straightrunning.com/XmingNotes/ 
+ 
  ​- 설치 완료 후 Xming을 눌러 실행 
+ 
  ```shell
  ​$ echo "export DISPLAY=localhost:0" >> ~/.bashrc 
- ​ # export DISPLAY=localhost:0 : DISPLAY 라느 환경변수를 localhost:0 이라고 선언 
+ ​ # export DISPLAY=localhost:0 : DISPLAY 라 환경변수를 localhost:0 이라고 선언 
  ​  
  ​$ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y 
  ​ # -y : yes를 선택하는 옵션, && : 명령어를 연달아 실행하게 해줌 
@@ -141,6 +154,7 @@
 ***
 ## ​8. CLHEP 설치 
  ​ # CLHEP란? : Class Library for High Energy Physics, 일반 수치 프로그래밍, 벡터 산술,  
+ 
  ​   기하학, 의사난수 생성 및 선형 대수학을 제공하는 C++ 라이브러리 
 ```shell  
  ​$ sudo mkdir -p /opt/clhep 
@@ -233,6 +247,7 @@
  ​ # exampleB1 실행 파일을 실행하라, gui 환경에서 실햄됨 
 ```
  ​- No such file or directory 관련 에러 발생 시 
+ 
 ```shell
  ​$ sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5 
 ```
@@ -321,6 +336,7 @@
 ## ​20. dyastima 설치 
 
  ​- windows에 설치하기 http://cosray.phys.uoa.gr/index.php/dyastima 
+ 
  ​- 메뉴얼 다운하기 http://cosray.phys.uoa.gr/apps/DYASTIMA/DYASTIMA_USER_MANUAL.pdf 
 
 ***

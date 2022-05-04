@@ -156,7 +156,7 @@
  ​ # CLHEP란? : Class Library for High Energy Physics, 일반 수치 프로그래밍, 벡터 산술,  
  
  ​   기하학, 의사난수 생성 및 선형 대수학을 제공하는 C++ 라이브러리 
-```shell  
+```shell
  ​sudo mkdir -p /opt/clhep 
  ​ # sudo : 관리자 권한으로 
  ​ # mkdir -p /opt/clhep : 폴더를 만들되 /opt/clhep 폴더가 없으면 /opt/clhep 폴더를 만들어라 

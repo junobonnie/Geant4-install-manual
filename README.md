@@ -110,7 +110,7 @@
  ​sudo pip3 install pip --upgrade 
  ​ # pip 버전 업그레이드 
  ​  
- ​pip3 install matplotlib numpy scipy pandas colorama pillow 
+ ​pip3 install matplotlib numpy scipy pandas colorama pillow particle
  ​ # matplotlib : python에서 그래프를 그릴 때 쓰는 라이브러리, 매우 강력하다 
  ​ # numpy : 행렬 관련 계산 라이브러리 
  ​ # scipy : 과학용 계산 라이브러리 

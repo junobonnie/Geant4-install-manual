@@ -28,7 +28,7 @@ $ sudo apt install gedit neofetch htop tree git wget python3 python3-pip gfortra
  # python3-pip : linux의 패키지 관리자가 apt라면, pip는 python의 패키지 관리자임. 각종 python 라이브러리를 다운받을 때 사용
  # gfortran : fortran 컴파일러. fortran은 타 언어보다 연산속도가 빨라서 반복 계산에 용이
  # gnuplot : 터미널에서 바로 그래프를 그리게 해줌
- # nautilus : 파일 관리자
+ # nemo : 파일 관리자
  # eog : eye of gnome, gui 이미지 뷰어
   # gui: Graphical User Interface, windows 3.1이 나왔을 때를 생각하라
  # gimp : 이미지 편집 툴

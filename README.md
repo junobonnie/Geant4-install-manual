@@ -24,11 +24,11 @@
 ***
 ## ​2. 유용한 linux 배포 패키지 설치 
 ```shell
-$ sudo nano /etc/apt/sources.list
- # apt 저장소 파일 열기
+​$ sudo nano /etc/apt/sources.list
+​ # apt 저장소 파일 열기
 ```
-- [ctrl+\]로 archive.ubuntu.com -> mirror.kakao.com, security.ubuntu.com -> mirror.kakao.com 다음과 같이 변경
- # 카카오 서버가 10배 정도 더 빠르다
+​- [ctrl+\]로 archive.ubuntu.com -> mirror.kakao.com, security.ubuntu.com -> mirror.kakao.com 다음과 같이 변경
+​ # 카카오 서버가 10배 정도 더 빠르다
 ```shell
  ​sudo apt update 
  ​ # 업데이트 가능한 패키지 리스트 최신화 

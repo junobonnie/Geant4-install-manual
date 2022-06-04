@@ -30,9 +30,9 @@
  ​sudo apt upgrade 
  ​ # 패키지 업데이트 
  ​  
- ​sudo apt install gedit gedit-plugins neofetch htop tree git wget python3 python3-pip gfortran gnuplot nautilus eog gimp zip cargo okular firefox dialog spyder 
+ ​sudo apt install gedit gedit-plugins neofetch htop tree git wget python3 python3-pip gfortran gnuplot nemo eog gimp zip cargo okular firefox dialog spyder 
  ​ # gedit : gui 텍스트 에디터 
-  # gedit-plugins : gedit의  유용한 플러그인들 
+ ​ # gedit-plugins : gedit의  유용한 플러그인들 
  ​ # neofetch : 컴퓨터와 os의 사양 및 정보를 알려주는 프로그램 
  ​ # htop : 더 나은 작업관리자 
  ​ # tree : 파일 경로를 tree로 나타내주는 명령어 

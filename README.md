@@ -28,6 +28,7 @@
 ​ # apt 저장소 파일 열기
 ```
 ​- [ctrl+\]로 archive.ubuntu.com -> mirror.kakao.com, security.ubuntu.com -> mirror.kakao.com 다음과 같이 변경
+
 ​ # 카카오 서버가 10배 정도 더 빠르다
 ```shell
  ​sudo apt update 

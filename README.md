@@ -24,7 +24,7 @@
 ***
 ## ​2. 유용한 linux 배포 패키지 설치 
 ```shell
-​$ sudo nano /etc/apt/sources.list
+​sudo nano /etc/apt/sources.list
 ​ # apt 저장소 파일 열기
 ```
 ​- [ctrl+\]로 archive.ubuntu.com -> mirror.kakao.com, security.ubuntu.com -> mirror.kakao.com 다음과 같이 변경
@@ -118,16 +118,16 @@
  ​sudo pip3 install pip --upgrade 
  ​ # pip 버전 업그레이드 
  ​  
-$ pip3 install matplotlib seaborn numpy scipy scikit-learn pandas colorama pillow particle
- # matplotlib : python에서 그래프를 그릴 때 쓰는 라이브러리, 매우 강력하다
- # seaborn : 진화된 matplotlib
- # numpy : 행렬 관련 계산 라이브러리
- # scipy : 과학용 계산 라이브러리
- # scikit-learn : 과학용 머신러닝 라이브러리
- # pandas : 데이터 프레임 라이브러리
- # colorama : 터미널 창 글자색 관리 라이브러리
- # pillow : 이미지 처리 라이브러리
- # particle : 기본 입자에 관한 정보를 다루는 라이브러리
+ ​pip3 install matplotlib seaborn numpy scipy scikit-learn pandas colorama pillow particle
+ ​ # matplotlib : python에서 그래프를 그릴 때 쓰는 라이브러리, 매우 강력하다
+ ​ # seaborn : 진화된 matplotlib
+ ​ # numpy : 행렬 관련 계산 라이브러리
+ ​ # scipy : 과학용 계산 라이브러리
+ ​ # scikit-learn : 과학용 머신러닝 라이브러리
+ ​ # pandas : 데이터 프레임 라이브러리
+ ​ # colorama : 터미널 창 글자색 관리 라이브러리
+ ​ # pillow : 이미지 처리 라이브러리
+ ​ # particle : 기본 입자에 관한 정보를 다루는 라이브러리
 ```
 ***
 ## ​5. windows에서 wsl 바로가기 만들기 
